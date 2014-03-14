@@ -98,7 +98,7 @@ public class VarastoTest {
     @Test
     public void otetaanVainJaljellaOlevat() {
         varasto.lisaaVarastoon(3.0);
-        assertEquals(varasto.otaVarastosta(10000.0), 3.0, vertailuTarkkuus);
+        assertEquals(varasto.otaVarastosta(10000.0), 5.0, vertailuTarkkuus);
         assertEquals(varasto.getSaldo(), 0.0, vertailuTarkkuus);
     }
 }
